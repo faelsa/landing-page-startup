@@ -38,7 +38,7 @@ export default function Superheros() {
     ]
 
     return (
-        <section className="w-full overflow-hidden">
+        <section id="about" className="w-full overflow-hidden">
             <div className="flex flex-col items-center justify-center pt-20 pb-10 px-4 lg:px-10 space-y-15">
                 <motion.div 
                     initial={{ opacity: 0, y: 30 }}

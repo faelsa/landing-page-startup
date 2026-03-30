@@ -31,7 +31,7 @@ export default function Service() {
     ]
 
     return (
-        <section className="w-full overflow-hidden">
+        <section id="services" className="w-full overflow-hidden">
             <div className="flex flex-col items-center justify-center py-20 px-4 lg:px-10 space-y-15">
                 <motion.div 
                     initial={{ opacity: 0, y: 30 }}

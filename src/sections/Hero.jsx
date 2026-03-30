@@ -3,10 +3,9 @@ import { motion } from 'framer-motion'
 
 export default function Hero() {
   return (
-    <section className="flex-1 flex items-center justify-center py-12 px-4 lg:px-10">
+    <section id="home" className="flex-1 flex items-center justify-center py-12 px-4 lg:px-10">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
-        
-        {/* Lado Esquerdo: Texto e Botão com Animação */}
+
         <motion.div 
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -26,14 +25,13 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        {/* Lado Direito: Ilustração (SVG) com Animação */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="flex-1 w-full relative max-w-2xl"
         >
-          <div className="w-full bg-white rounded-[2rem] border border-[#f1f5f9] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.08)] p-4 lg:p-6">
+          <div className="w-full bg-white rounded-[2rem] p-4 lg:p-6">
             <img 
               src={heroSvg} 
               alt="hero illustration" 
@@ -44,7 +42,6 @@ export default function Hero() {
             />
           </div>
           
-          {/* Decorativo */}
           <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-[#00a9f6] opacity-[0.02] rounded-full blur-3xl"></div>
         </motion.div>
 

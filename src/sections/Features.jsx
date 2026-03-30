@@ -34,7 +34,7 @@ export default function Features() {
     const [activeTab, setActiveTab] = useState(tabs[0]);
 
     return (
-        <section className="py-20 px-4 lg:px-20 max-w-7xl mx-auto">
+        <section id="supports" className="py-20 px-4 lg:px-20 max-w-7xl mx-auto">
             <div className="flex flex-wrap justify-center border-b border-gray-100 mb-16">
                 {tabs.map((tab) => (
                     <button
