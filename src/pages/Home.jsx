@@ -5,7 +5,7 @@ import Features from '../sections/Features'
 import Superheros from '../sections/Superheros'
 import OtherSevices from '../sections/OtherSevices'
 import Subscribe from '../sections/Subscribe'
-import Footer from '../sections/footer'
+import Footer from '../sections/Footer'
 
 export default function Home() {
   return (
