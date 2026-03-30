@@ -32,7 +32,7 @@ export default function Service() {
 
     return (
         <section id="services" className="w-full overflow-hidden">
-            <div className="flex flex-col items-center justify-center py-20 px-4 lg:px-10 space-y-15">
+            <div className="flex flex-col items-center justify-center py-12 lg:py-20 px-6 lg:px-10 space-y-12 lg:space-y-20">
                 <motion.div 
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}

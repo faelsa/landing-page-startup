@@ -34,13 +34,13 @@ export default function Features() {
     const [activeTab, setActiveTab] = useState(tabs[0]);
 
     return (
-        <section id="supports" className="py-20 px-4 lg:px-20 max-w-7xl mx-auto">
-            <div className="flex flex-wrap justify-center border-b border-gray-100 mb-16">
+        <section id="supports" className="py-12 lg:py-20 px-6 lg:px-20 max-w-7xl mx-auto">
+            <div className="flex flex-wrap justify-center border-b border-gray-100 mb-10 lg:mb-16">
                 {tabs.map((tab) => (
                     <button
                         key={tab.id}
                         onClick={() => setActiveTab(tab)}
-                        className={`px-8 py-4 text-sm font-semibold transition-all relative ${
+                        className={`px-4 lg:px-8 py-4 text-xs lg:text-sm font-semibold transition-all relative ${
                             activeTab.id === tab.id ? 'text-gray-900' : 'text-gray-400 hover:text-gray-600'
                         }`}
                     >
@@ -62,48 +62,43 @@ export default function Features() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
                     transition={{ duration: 0.3 }}
-                    className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20"
+                    className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20"
                 >
                     {/* Left Side: Content */}
-                    <div className="flex-1 space-y-8">
-                        <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                    <div className="flex-1 space-y-6 lg:space-y-8 text-center lg:text-left">
+                        <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 leading-tight">
                             {activeTab.title}
                         </h2>
-                        <p className="text-gray-500 text-lg leading-relaxed max-w-xl">
+                        <p className="text-gray-500 text-base lg:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
                             {activeTab.description}
                         </p>
 
                         {/* Benefits Grid */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             {activeTab.benefits.map((benefit, index) => (
-                                <div key={index} className="flex items-center gap-3">
-                                    <FontAwesomeIcon icon={faCheckCircle} className="text-[#38CB89] text-xl" />
+                                <div key={index} className="flex items-center justify-center lg:justify-start gap-3">
+                                    <FontAwesomeIcon icon={faCheckCircle} className="text-[#38CB89] text-xl shrink-0" />
                                     <span className="text-gray-700 font-medium">{benefit}</span>
                                 </div>
                             ))}
                         </div>
 
-                        <div className="pt-4">
+                        <div className="pt-4 flex justify-center lg:justify-start">
                             <a href="#" className="text-blue-500 font-semibold flex items-center gap-2 hover:gap-3 transition-all">
                                 Explore more <span>&gt;</span>
                             </a>
                         </div>
                     </div>
 
-                    <div className="flex-1">
+                    <div className="flex-1 w-full max-w-lg lg:max-w-none">
                         <motion.div
                             initial={{ scale: 0.9, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}
                             transition={{ duration: 0.5 }}
                             className="relative"
                         >
+                            <img src={activeTab.image} alt={activeTab.label} className="w-full h-auto rounded-2xl shadow-xl" />
                             <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-blue-50/30 rounded-full blur-3xl" />
-                            
-                            <img 
-                                src={activeTab.image} 
-                                alt={activeTab.label}
-                                className="w-full h-auto rounded-3xl"
-                            />
                         </motion.div>
                     </div>
                 </motion.div>

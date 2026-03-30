@@ -47,15 +47,15 @@ export default function Subscribe() {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 lg:px-10 relative z-10">
+      <div className="max-w-6xl mx-auto px-6 lg:px-10 relative z-10">
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="bg-white rounded-[2.5rem] p-10 lg:p-16 shadow-sm border border-orange-100/50 flex flex-col lg:flex-row items-center justify-between gap-10"
+          className="bg-white rounded-[1.5rem] lg:rounded-[2.5rem] p-8 lg:p-16 shadow-sm border border-orange-100/50 flex flex-col lg:flex-row items-center justify-between gap-10"
         >
           <div className="flex-1 space-y-4 text-center lg:text-left">
-            <h2 className="text-3xl lg:text-4xl font-bold text-[#0f172a] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0f172a] tracking-tight">
               Like our service? Subscribe us
             </h2>
             <p className="text-gray-500 text-base max-w-md mx-auto lg:mx-0 leading-relaxed">

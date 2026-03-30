@@ -9,7 +9,7 @@ import Footer from '../sections/Footer'
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col space-y-32 pb-20">
+    <main className="min-h-screen flex flex-col space-y-16 lg:space-y-32 pb-20">
       <Header />
       <Hero />
       <Service />

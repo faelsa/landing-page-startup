@@ -39,24 +39,24 @@ export default function Superheros() {
 
     return (
         <section id="about" className="w-full overflow-hidden">
-            <div className="flex flex-col items-center justify-center pt-20 pb-10 px-4 lg:px-10 space-y-15">
+            <div className="flex flex-col items-center justify-center pt-12 lg:pt-20 pb-6 lg:pb-10 px-6 lg:px-10 space-y-8 lg:space-y-15">
                 <motion.div 
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
-                    className="w-full flex flex-col items-center justify-center space-y-5"
+                    className="w-full flex flex-col items-center justify-center space-y-4 lg:space-y-5"
                 >
-                    <h2 className="text-4xl font-bold text-center text-gray-800">
+                    <h2 className="text-3xl lg:text-4xl font-bold text-center text-gray-800">
                         Meet our superheros
                     </h2>
-                    <p className="text-lg text-center text-gray-600 max-w-2xl">
+                    <p className="text-base lg:text-lg text-center text-gray-600 max-w-2xl px-4">
                         Build an incredible workplace and grow your business with Gusto’s all-in-one platform with amazing contents.
                     </p>
                 </motion.div>
             </div>
 
-            <div className="px-10 pb-20">
+            <div className="px-6 lg:px-10 pb-12 lg:pb-20">
                 <Swiper
                     modules={[Navigation, Pagination, Autoplay]}
                     spaceBetween={30}

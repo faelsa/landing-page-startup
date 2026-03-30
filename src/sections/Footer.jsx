@@ -9,11 +9,11 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-white border-t border-gray-100 pt-20 pb-10">
-      <div className="max-w-7xl mx-auto px-4 lg:px-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+    <footer className="bg-white border-t border-gray-100 pt-12 lg:pt-20 pb-10">
+      <div className="max-w-7xl mx-auto px-6 lg:px-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-12 mb-16 text-center sm:text-left">
           
-          <div className="lg:col-span-2 space-y-6">
+          <div className="sm:col-span-2 lg:col-span-2 space-y-6 flex flex-col items-center sm:items-start">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 bg-[#fb923c] rounded-lg rotate-12 flex items-center justify-center">
                 <div className="w-4 h-4 bg-white rounded-sm -rotate-12" />
